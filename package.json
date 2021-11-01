@@ -8,15 +8,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "@types/formidable": "^1.2.4",
+    "@types/gm": "^1.18.10",
+    "@types/lodash": "^4.14.176",
+    "@types/pdfkit": "^0.12.3",
+    "@types/react-pdf": "^5.0.9",
+    "da": "^0.0.3",
+    "daisyui": "^1.16.0",
+    "formidable": "^2.0.1",
+    "lodash": "^4.17.21",
     "next": "12.0.2",
+    "pdfkit": "^0.13.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-pdf": "^5.5.0",
+    "react-use": "^17.3.1"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
+    "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
     "typescript": "4.4.4"
   }
 }
