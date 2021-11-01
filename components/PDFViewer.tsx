@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
-import { useCounter, useList, useToggle } from 'react-use';
+import { useCounter, useList } from 'react-use';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -15,17 +15,13 @@ const toBase64 = (file: File): Promise<string | ArrayBuffer> =>
     reader.onerror = error => reject(error);
   });
 
-// const canvasToJpg = (canvas:HTMLCanvasElement) => {
-//   const data = canvas.toDataURL('image/jpg')
-// }
-
 const PDFViewer = () => {
   const [stage, setStage] = useState<'idle' | 'preparing' | 'styling'>('idle');
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   const ref = useRef<HTMLCanvasElement>(null);
   const [numPages, setNumPages] = useState(null);
-  const [page, { inc: nextPage, dec: prevPage, reset }] = useCounter(1, numPages, 1);
+  const [page, { inc: nextPage, reset }] = useCounter(1, numPages, 1);
   const [jpgDataItems, jpgList] = useList<Blob>([]);
 
   const [fileName, setFileName] = useState('');
@@ -78,6 +74,8 @@ const PDFViewer = () => {
       setStage('styling');
       uploadToServer();
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [numPages, jpgDataItems]);
 
   return (
