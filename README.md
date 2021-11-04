@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">scanqer</h1>
 
-## Getting Started
+<p align="center"><img src="https://socialify.git.ci/Hennessy811/scanqer/image?description=1&amp;descriptionEditable=A%20small%20project%20to%20make%20your%20docs%20look%20like%20they%20are%20scanned&amp;font=Source%20Code%20Pro&amp;language=1&amp;owner=1&amp;pattern=Charlie%20Brown&amp;theme=Dark" alt="project"></p>
 
-First, run the development server:
+<p>A small project to make your docs look like they are scanned</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+<h2>🚀 Demo</h2>
+
+[https://scanqer.herokuapp.com/](https://scanqer.herokuapp.com/)
+
+<h2>Project Screenshots:</h2>
+
+<img src="https://cln.sh/mVC4Yi" alt="shields" width="400" height="400/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Upload your PDF and get back your scanned version
+*   Custom filters and options (coming soon)
+*   Large docs support (at least 20+ pages 50mb docs are good)
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Node 14</p>
+
+<p>2. GraphicsMagick</p>
+
+```
+https://github.com/aheckmann/gm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>3. Install dependencies</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm i # or `yarn`
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<p>4. Start the app</p>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run dev # or `yarn dev`
+```
 
-## Learn More
+  
+  
+<h2>💻 Built with</h2>
 
-To learn more about Next.js, take a look at the following resources:
+Technologies used in the project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*   Next.js 12
+*   TailwindCSS
+*   DaisyUI
+*   TypeScript
