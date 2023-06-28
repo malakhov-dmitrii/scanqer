@@ -28,6 +28,8 @@ COPY . /usr/src
 # install dependencies
 RUN npm install
 
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # start app
 RUN npm run build
 EXPOSE 3000
